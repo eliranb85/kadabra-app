@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+
 import Link from "next/link"
 import { FaUserCircle } from "react-icons/fa"
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md"
@@ -12,6 +14,22 @@ const Header = () => {
         <Link href="/" className="font-black text-tertiary-dark">
           KADABRA
         </Link>
+        <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            By{" "}
+            <Image
+              src="/kadabra.svg"
+              alt="kadabra Logo"
+              className="dark:invert"
+              width={100}
+              height={24}
+              priority
+            />
+          </a>
         <ul className="flex items-center space-x-4 ml-4">
             <li className="flex items-center">
             <Link href="/auth">
