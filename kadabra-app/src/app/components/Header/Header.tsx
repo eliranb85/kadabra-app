@@ -61,12 +61,12 @@ onClick={()=>{
             </Link>
         </li>
         <li className="hover:translate-y-2 duration-500 transition-all">
-            <Link href="/dashborad">
+            <Link href="components/Dashborad">
                 Dashborad
             </Link>
         </li>
         <li className="hover:translate-y-2 duration-500 transition-all">
-            <Link href="/profile">
+            <Link href="components/Profile">
                 Profile
             </Link>
         </li>

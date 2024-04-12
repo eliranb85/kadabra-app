@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import ThemeProvider from "./components/ThemeProvider/ThemeProvider";
 
 import "./globals.css";
+import Dashborad from "./components/Dashborad/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,6 @@ export default function RootLayout({
 <main>
 <Header/>
         {children}
-
 </main>
 
       </ThemeProvider>
