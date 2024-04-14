@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+<<<<<<< Updated upstream
 import Header from "./components/Header/Header";
 import ThemeProvider from "./components/ThemeProvider/ThemeProvider";
 
+=======
+import Header from "../components/Header/Header";
+>>>>>>> Stashed changes
 import "./globals.css";
 import Dashborad from "./components/Dashborad/page";
 
@@ -19,6 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+<<<<<<< Updated upstream
     <html lang="en">
       
 
@@ -32,5 +37,15 @@ export default function RootLayout({
       </ThemeProvider>
         </body>
     </html>
+=======
+
+ 
+      <body className={inter.className}>
+      <Header/>
+        {children}
+        </body>
+
+   
+>>>>>>> Stashed changes
   );
 }
